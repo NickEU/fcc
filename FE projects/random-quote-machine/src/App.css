@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+#quote-box {
+  width: 60%;
+  margin: auto;
+  background-color: rgb(255,255,230);
+}
+
+#new-quote {
+  margin-right: 20px;
+}
+
