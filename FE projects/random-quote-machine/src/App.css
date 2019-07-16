@@ -1,14 +1,22 @@
-.App {
-  text-align: center;
+body {
+  background-color: gray;
 }
 
 #quote-box {
+  text-align: center;
+  padding: 10px 30px 10px 30px;
   width: 60%;
   margin: auto;
-  background-color: rgb(255,255,230);
+  margin-top: 50px;
+  border-radius: 10%;
+  background-color: rgb(255, 255, 230);
 }
 
 #new-quote {
   margin-right: 20px;
+  background-color: rgb(255, 255, 230);
 }
 
+#tweet-quote {
+  color: cyan;
+}

@@ -1,13 +1,26 @@
-import React from 'react';
-import './Quote.css';
+import React from "react";
+import "./Quote.css";
 
-const Quote = ({ text, author }) => {
+class Quote extends React.Component {
+  constructor(props) {
+    super(props);
+    this.pRef = React.createRef();
+  }
+  componentDidUpdate() {
+    this.pRef.current.classList.toggle("animate");
+    setTimeout(() => this.pRef.current.classList.toggle("animate"), 100);
+  }
+
+  render() {
     return (
-        <div id="quote">
-            <p id="text">{text}</p>
-            <p id="author">{author}</p>
-        </div>
+      <>
+        <p ref={this.pRef} className="animate" id="text">
+          {this.props.text}
+        </p>
+        <p id="author">{this.props.author}</p>
+      </>
     );
+  }
 }
 
 export default Quote;
